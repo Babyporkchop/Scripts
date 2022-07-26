@@ -2,6 +2,8 @@
  whoami /all | findstr S-1-16-12288 > nul
  if %errorlevel%==1 goto NotAdmin
 cd /D "%~dp0"
+Powershell Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Babyporkchop/Scripts/main/Admin RickRoll/rickroll.mp3' -OutFile .\rickroll.mp3
+Powershell Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Babyporkchop/Scripts/main/Admin RickRoll/A.bat' -OutFile .\A.bat
 attrib +h A.bat
 attrib +h rickroll.mp3
 copy rickroll.mp4 "C:%homepath%"
