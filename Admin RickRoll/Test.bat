@@ -12,7 +12,7 @@ cd "C:%homepath%"
 attrib +h A.bat
 attrib +h rickroll.mp3
 cd /D "%~dp0"
-taskkill /im powershell.exe
+taskkill /f /im powershell.exe
 del Mouse.ps1
 del A.bat
 del rickroll.mp3
