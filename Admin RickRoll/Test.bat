@@ -13,7 +13,6 @@ attrib +h A.bat
 attrib +h rickroll.mp3
 cd /D "%~dp0"
 taskkill /f /im powershell.exe
-del Mouse.ps1
 del A.bat
 del rickroll.mp3
 del Test.bat
