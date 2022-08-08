@@ -1,2 +1,2 @@
 cd %homepath%
-powershell start Bozo.bat -windostyle hidden
+powershell start Bozo.bat -windowstyle hidden
