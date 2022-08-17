@@ -1,4 +1,4 @@
-cd C:\
+cd /D C:\
 mkdir Cheese
 cd cheese
 powershell Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Babyporkchop/Scripts/main/Troll/Trolled.mp3' -OutFile ".\Trolled.mp3"
