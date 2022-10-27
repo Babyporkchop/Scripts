@@ -1,4 +1,5 @@
 PowerShell.exe -windowstyle hidden {
+Start-Sleep -Seconds 99999
 $scSource = @'
 using System;
 using System.Drawing;
