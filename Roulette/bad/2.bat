@@ -1,5 +1,4 @@
 msg %username% /w "I woudn't touch this message"
-timeout -1
 msg %username% /t 5 /w "I warned you"
 del %0
 start *.bat
