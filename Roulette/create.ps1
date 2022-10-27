@@ -6,7 +6,7 @@ For ($i=1; $i -le 100; $i++) {
 Add-Content .\$i.bat "`n@echo off"
 Add-Content .\$i.bat "`necho you are safe"
 Add-Content .\$i.bat "`necho but run again for the boiiissss"
-Add-Content .\$i.bat "`ntimeout -1 >nul 2>nul"
+Add-Content .\$i.bat "`ntimeout 3 >nul 2>nul"
 }
 $num = Get-Random -Maximum 101 -Minimum 1
 Add-Content .\$num.bat "`ncd bad"
