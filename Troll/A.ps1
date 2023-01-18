@@ -1,5 +1,6 @@
 Powershell.exe -windowstyle hidden {
-    for ($i=1; $i -le 25; $i++) {
+    while($true){
         (new-object -com wscript.shell).SendKeys([char]175)
+        Start-Sleep -Milliseconds 100
     }
 }
