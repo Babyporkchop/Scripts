@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Bypass -File Sound.ps1
